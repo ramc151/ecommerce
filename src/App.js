@@ -16,11 +16,11 @@ function App() {
       />
       <Navbar />
       <Routes>
-        <Route path='/' element={<Product category="https://fakestoreapi.com/products" id="all" setProgress={setProgress}/>}></Route>
-        <Route path='/electronic' element={<Product category="https://fakestoreapi.com/products/category/electronics" key="electronic" id="electronic" setProgress={setProgress}/>}></Route>
-        <Route path='/jewelery' element={<Product category="https://fakestoreapi.com/products/category/jewelery" key="jewelery" id="jewelery" setProgress={setProgress}/>}></Route>
-        <Route path='/mensclothing' element={<Product category="https://fakestoreapi.com/products/category/men's clothing" key="mensclothing" id="mens clothing" setProgress={setProgress}/>}></Route>
-        <Route path='/womensclothing' element={<Product category="https://fakestoreapi.com/products/category/women's clothing" key="womensclothing" id="womens clothing" setProgress={setProgress}/>}></Route>
+        <Route path='/' element={<Product category="products" id="all" setProgress={setProgress}/>}></Route>
+        <Route path='/electronic' element={<Product category="products/category/electronics" key="electronic" id="electronic" setProgress={setProgress}/>}></Route>
+        <Route path='/jewelery' element={<Product category="products/category/jewelery" key="jewelery" id="jewelery" setProgress={setProgress}/>}></Route>
+        <Route path='/mensclothing' element={<Product category="products/category/men's clothing" key="mensclothing" id="mens clothing" setProgress={setProgress}/>}></Route>
+        <Route path='/womensclothing' element={<Product category="products/category/women's clothing" key="womensclothing" id="womens clothing" setProgress={setProgress}/>}></Route>
       </Routes>
     </Router>
   );

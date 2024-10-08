@@ -7,7 +7,7 @@ const Product = (props) => {
     const [prod, setProd] = useState([])
     const fetchapi = async () => {
         props.setProgress(10)
-        let url = `${props.category}`;
+        let url = `https://fakestoreapi.com/${props.category}`;
         setLoading(true)
         let data = await fetch(url);
         props.setProgress(30)
